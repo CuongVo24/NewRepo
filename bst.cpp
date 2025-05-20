@@ -8,6 +8,19 @@ struct NODE {
     NODE* p_left;
     NODE* p_right;
 };
+NODE* Search(NODE* pRoot, int x);
+void Insert(NODE* &pRoot, int x);
+NODE* findMin(NODE* p);
+void Remove(NODE* &pRoot, int x);
+NODE* createTree(int a[], int n);
+void removeTree(NODE* &pRoot);
+int Height(NODE* pRoot);
+int countLess(NODE* pRoot, int x);
+int countGreater(NODE* pRoot, int x);
+bool isBSTUtil(NODE* node, int minVal, int maxVal);
+bool isFullBST(NODE* pRoot);
+
+
 
 //1. Tìm node theo giá trị
 NODE* Search(NODE* pRoot, int x) {
