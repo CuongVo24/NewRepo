@@ -11,6 +11,21 @@ struct NODE {
     NODE* p_right;
     int height;
 };
+
+int getHeight(NODE* node);
+void updateHeight(NODE* node);
+int getBalance(NODE* node);
+NODE* rotateLeft(NODE* x);
+NODE* rotateRight(NODE* y);
+NODE* findMin(NODE* node);
+
+NODE* createNode(int data);
+void Insert(NODE* &pRoot, int x);
+void Remove(NODE* &pRoot, int x);
+bool isAVL(NODE* pRoot);
+
+
+
 //1.Tạo node
 NODE* createNode(int data) {
     return new NODE{data, nullptr, nullptr, 0};
